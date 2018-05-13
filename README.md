@@ -1,2 +1,2 @@
-# interactive-video-player
+# Interactive Video Player
 FEWD Project 6
