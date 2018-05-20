@@ -1,3 +1,72 @@
-.highlight{
-    color: red;
+/* Interactive Video Player
+ * Author: Chris Howell
+ * FEWD - Project 6 
+ * Date: 05/19/2018
+*/
+
+
+/*===========================
+ * Base Styles
+ *=========================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  font-size: 18px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/*===========================
+ * Containers
+ *=========================== */
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/*===========================
+ * Captions
+ *=========================== */
+.captions{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.captions > p > span {
+  cursor: pointer;
+}
+
+.highlight {
+    color: orange;
+}
+
+.mejs__captions-button{
+  display: none;
+}
+
+
+/*===========================
+ * Media Queries
+ *=========================== */
+@media(min-width: 768px){
+  .wrapper {
+    margin-top: 20px;
+    max-width: 768px;
+  }
+  .captions{
+    padding: 0;
+  }
 }
