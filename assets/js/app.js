@@ -36,7 +36,10 @@ function getActiveCue(track){
 
 // Setup mediaelementplayer
 var mediaEl = $('video').mediaelementplayer({
-    features: ['playpause', 'current', 'progress', 'tracks', 'duration', 'volume', 'fullscreen']
+    features: ['playpause', 'current', 'progress', 'tracks', 'duration', 'volume', 'fullscreen'],
+    videoWidth: '100%',
+    videoHeight: '100%',
+    enableAutosize: true
 });
 
 
